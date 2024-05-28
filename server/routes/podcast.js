@@ -26,7 +26,7 @@ router.get("/get/:id", getPodcastById);
 //add episode to a
 router.post("/episode", verifyToken, addepisodes);
 
-//favorit/unfavorit podcast
+//favorite/unfavorite podcast
 router.post("/favorites", verifyToken, favoritPodcast);
 
 //add view
