@@ -27,7 +27,7 @@ const Frame = styled.div`
   flex: 3;
 `;
 
-const Podstream = styled.div`
+const Echowave = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -95,7 +95,7 @@ function App() {
             index={index}
           />
         )}
-        <Podstream>
+        <Echowave>
           {menuOpen && (
             <Menu
               setMenuOpen={setMenuOpen}
@@ -135,7 +135,7 @@ function App() {
           {open && (
             <ToastMessage open={open} message={message} severity={severity} />
           )}
-        </Podstream>
+        </Echowave>
       </BrowserRouter>
     </ThemeProvider>
   );

@@ -63,6 +63,7 @@ align-items: center;
 padding: 0px 16px;
 width: 86%;
 `;
+
 const Close = styled.div`
 display: none;
 @media (max-width: 1100px) {
@@ -70,6 +71,7 @@ display: none;
 
 }
 `;
+
 const Logo = styled.div`
   color: ${({ theme }) => theme.primary};
   display: flex;
@@ -139,7 +141,7 @@ const Menu = ({ setMenuOpen, darkMode, setDarkMode, setUploadOpen }) => {
                         </Elements>
                     </Link >
             }
-            <HR />
+            {/* <HR /> */}
             <Link onClick={() => {
                 if (currentUser) {
                     setUploadOpen(true)
@@ -161,7 +163,6 @@ const Menu = ({ setMenuOpen, darkMode, setDarkMode, setUploadOpen }) => {
                         <ExitToAppRoundedIcon />
                         <NavText>Log Out</NavText>
                     </Elements>
-
                     :
                     <Elements onClick={() => dispatch(openSignin())}>
                         <ExitToAppRoundedIcon />

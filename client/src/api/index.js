@@ -3,7 +3,8 @@ import jwt_decode from "jwt-decode";
 // https://echowave-tbdq.onrender.com
 // http://localhost:3001/api
 const API = axios.create({
-  baseURL: `https://echowave-tbdq.onrender.com/api`,
+  // baseURL: `https://echowave-tbdq.onrender.com/api`,
+  baseURL: `http://localhost:3001/api`,
 });
 
 //auth
