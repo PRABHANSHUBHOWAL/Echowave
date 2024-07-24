@@ -60,22 +60,22 @@ const OutlinedBox = styled.div`
     ${({ googleButton, theme }) =>
     googleButton &&
     `
-      user-select: none; 
+    user-select: none; 
     gap: 16px;`}
     ${({ button, theme }) =>
     button &&
     `
-      user-select: none; 
+    user-select: none; 
     border: none;
-      background: ${theme.button};
-      color:'${theme.bg}';`}
-      ${({ activeButton, theme }) =>
+    background: ${theme.button};
+    color: white;`}
+    ${({ activeButton, theme }) =>
     activeButton &&
     `
       user-select: none; 
     border: none;
-      background: #2e85ff;
-      color: white;`}
+    background: #2e85ff;
+    color: white;`}
     margin: 3px 20px;
     font-size: 14px;
     display: flex;

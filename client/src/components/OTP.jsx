@@ -20,7 +20,7 @@ const OutlinedBox = styled.div`
   height: 44px;
   border-radius: 12px;
   border: 1px solid ${({ theme }) => theme.text_secondary};
-  color: ${({ theme }) => theme.text_secondary};
+  color: white};
   ${({ googleButton, theme }) =>
     googleButton &&
     `
@@ -38,7 +38,7 @@ const OutlinedBox = styled.div`
     `
     user-select: none; 
   border: none;
-    background: ${theme.primary};
+    background: #2e85ff;
     color: white;`}
   margin: 3px 20px;
   font-size: 14px;

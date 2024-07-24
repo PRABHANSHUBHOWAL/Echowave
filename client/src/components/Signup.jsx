@@ -69,7 +69,7 @@ const OutlinedBox = styled.div`
       user-select: none; 
     border: none;
       background: ${theme.button};
-      color: '${theme.text_secondary}';`}
+      color: white;`}
       ${({ activeButton, theme }) =>
     activeButton &&
     `
