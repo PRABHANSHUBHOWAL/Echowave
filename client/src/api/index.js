@@ -1,7 +1,7 @@
 import axios from "axios";
-import jwt_decode from "jwt-decode";
-// https://echowave-tbdq.onrender.com
-// http://localhost:3001/api
+// import jwt_decode from "jwt-decode";
+// deployed : https://echowave-tbdq.onrender.com/api
+// localhost : http://localhost:3001/api
 const API = axios.create({
   // baseURL: `https://echowave-tbdq.onrender.com/api`,
   baseURL: `http://localhost:3001/api`,
