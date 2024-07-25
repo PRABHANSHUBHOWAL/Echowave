@@ -201,7 +201,7 @@ const Upload = ({ setUploadOpen }) => {
 
     const dispatch = useDispatch();
 
-    const token = localStorage.getItem("podstreamtoken");
+    const token = localStorage.getItem("echowavetoken");
 
     const goToAddEpisodes = () => {
         setShowEpisode(true);

@@ -157,7 +157,7 @@ const PodcastDetails = () => {
 
   const dispatch = useDispatch();
 
-  const token = localStorage.getItem("podstreamtoken");
+  const token = localStorage.getItem("echowavetoken");
   //user
   const { currentUser } = useSelector(state => state.user);
 

@@ -155,7 +155,7 @@ export const PodcastCard = ({ podcast, user, setSignInOpen }) => {
   const [favourite, setFavourite] = useState(false)
   const dispatch = useDispatch();
 
-  const token = localStorage.getItem("podstreamtoken");
+  const token = localStorage.getItem("echowavetoken");
 
   const favoritepodcast = async () => {
     await favoritePodcast(podcast._id, token).then((res) => {

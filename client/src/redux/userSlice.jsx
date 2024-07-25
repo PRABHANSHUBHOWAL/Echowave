@@ -15,7 +15,7 @@ export const userSlice = createSlice({
     loginSuccess: (state, action) => {
       state.loading = false;
       state.currentUser = action.payload.user;
-      localStorage.setItem('podstreamtoken', action.payload.token);
+      localStorage.setItem('echowavetoken', action.payload.token);
     },
     loginFailure: (state) => {
       state.loading = false;

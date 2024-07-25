@@ -58,7 +58,7 @@ const Favourites = () => {
   //user
   const { currentUser } = useSelector(state => state.user);
 
-  const token = localStorage.getItem("podstreamtoken");
+  const token = localStorage.getItem("echowavetoken");
   const getUser = async () => {
     await getUsers(token).then((res) => {
       setUser(res.data)
