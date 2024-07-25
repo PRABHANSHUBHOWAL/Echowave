@@ -3,8 +3,8 @@ import axios from "axios";
 // deployed : https://echowave-tbdq.onrender.com/api
 // localhost : http://localhost:3001/api
 const API = axios.create({
-  // baseURL: `https://echowave-tbdq.onrender.com/api`,
-  baseURL: `http://localhost:3001/api`,
+  baseURL: `https://echowave-tbdq.onrender.com/api`,
+  // baseURL: `http://localhost:3001/api`,
 });
 
 //auth
