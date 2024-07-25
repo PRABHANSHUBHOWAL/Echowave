@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import React, { useState, useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+// import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { PodcastCard } from '../components/PodcastCard';
 import { getUsers } from '../api/index';
 import { CircularProgress } from '@mui/material';
@@ -54,7 +55,7 @@ color: ${({ theme }) => theme.text_primary};
 const Favourites = () => {
   const [user, setUser] = useState();
   const [Loading, setLoading] = useState(false);
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   //user
   const { currentUser } = useSelector(state => state.user);
 
@@ -68,7 +69,6 @@ const Favourites = () => {
   }
 
   const getuser = async () => {
-
     if (currentUser) {
       setLoading(true);
       await getUser();
@@ -78,6 +78,7 @@ const Favourites = () => {
 
   useEffect(() => {
     getuser();
+    // eslint-disable-next-line
   }, [currentUser]);
 
   return (
