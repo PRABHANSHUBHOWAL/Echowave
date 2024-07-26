@@ -78,7 +78,7 @@ const Logo = styled.div`
   align-items: center;
   justify-content: center;
   gap: 6px;
-  font-family: cursive;
+  font-family: poppins;
   font-weight: bold;
   font-size: 24px;
   margin: 16px 0px;
